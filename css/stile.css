@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;700&display=swap');
 
+/* Document */
+
 * {
 	margin: 0;
 	padding: 0;
@@ -13,35 +15,25 @@
 	text-align: center;
 }
 
-.row {
-	padding-bottom: 50px;
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
 }
+
+/* Header */
 
 header h1 {
 	color: #E53170;
 }
 
-.card-img, .card-text{
-	float: left;
+/* Row */
+
+.row {
+	padding-bottom: 50px;
 }
 
-.card-img {
-	height: 100%;
-}
-
-.card-text {
-	text-align: left;
-	padding: 15px;
-	line-height: 1.5;
-}
-
-.card-text .email {
-	color: #4DCCF2;
-}
-
-.card img {
-	height: 100%;
-}
+/* Card */
 
 .card {
 	width: calc(100% / 3 - 20px);
@@ -56,8 +48,24 @@ header h1 {
 	margin-right: 0;
 }
 
-.clearfix::after {
-	content: "";
-	display: table;
-	clear: both;
+.card-img, .card-text{
+	float: left;
+}
+
+.card-img {
+	height: 100%;
+}
+
+.card img {
+	height: 100%;
+}
+
+.card-text {
+	text-align: left;
+	padding: 15px;
+	line-height: 1.5;
+}
+
+.card-text .email {
+	color: #4DCCF2;
 }
