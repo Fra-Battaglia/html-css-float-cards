@@ -13,6 +13,51 @@
 	text-align: center;
 }
 
+.row {
+	padding-bottom: 50px;
+}
+
 header h1 {
 	color: #E53170;
+}
+
+.card-img, .card-text{
+	float: left;
+}
+
+.card-img {
+	height: 100%;
+}
+
+.card-text {
+	text-align: left;
+	padding: 15px;
+	line-height: 1.5;
+}
+
+.card-text .email {
+	color: #4DCCF2;
+}
+
+.card img {
+	height: 100%;
+}
+
+.card {
+	width: calc(100% / 3 - 20px);
+	height: 100px;
+	background-color: #0F0E17;
+	color: #FFFFFF;
+	float: left;
+	margin-right: 30px;
+}
+
+.card:last-child {
+	margin-right: 0;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
 }
